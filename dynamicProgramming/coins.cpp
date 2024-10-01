@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+#define float double
 int main(){
 	int n; cin >> n; vector<float> probs; vector<vector<float>> dp(n+1, vector<float>(n+1,0));
 	for(int i = 0; i<n; i++){
@@ -23,7 +23,7 @@ int main(){
 		}
 	}
 	
-	cout << fixed << setprecision(10) << 0.612 -  soma << endl;
+	cout << fixed << setprecision(10) <<  soma << endl;
 
 	return 0;
 }
