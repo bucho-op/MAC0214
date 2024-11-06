@@ -1,40 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
+// lis
+int find_lis(vector<int>& values, int max_b) {
+    vector<int> dp(max_b+1, 0);
+    for (int i = 0; i<values.size(); i++){
+        for (int j = values[i]-1; j>=0; j--){
+            dp[values[i]] = max(1 + dp[j], dp[values[i]]);
+        }
+    } 
+    return dp[max_b];
+}
 
-int main() {
-    int n, m; 
-    cin >> n >> m;
+signed main() {
+    int numCables, numConnections; 
+    cin >> numCables >> numConnections;
 
-    // Read the cables
-    vector<pair<int, int>> cabos(m);
-    for (int i = 0; i < m; i++) {
+   
+    vector<pair<int, int>> cables(numConnections);
+    for (int i = 0; i < numConnections; i++) {
         int a, b;
         cin >> a >> b;
-        cabos[i] = {a, b}; // Store each cable as (start, end)
+        cables[i] = {a, b}; 
     }
+    
+    
+    sort(cables.begin(), cables.end());
 
-    // Sort cables by the starting point (first element of the pair)
-    sort(cabos.begin(), cabos.end());
-
-    // DP array to store the maximum number of non-intersecting cables
-    vector<int> dp(m + 1, 0); // dp[i] means max cables with first i cables considered
-
-    // Fill the DP table
-    for (int i = 1; i <= m; i++) {
-        dp[i] = dp[i-1]; // Case when we don't include the current cable
-
-        // Find the last cable that does not intersect with the current one
-        for (int j = 0; j < i; j++) {
-            // Check if the cables do not intersect
-            if (cabos[j].second < cabos[i].first) {
-                // Update the dp value considering we include the current cable
-                dp[i] = max(dp[i - 1], dp[j] + 1);
-            }
-        }
+    vector<int> bValues; int max_b = 0;
+    for (const auto& cable : cables) {
+        bValues.push_back(cable.second);
+        max_b = max(max_b, cable.second); 
     }
-
-    // The answer is in dp[m], which is the max number of non-intersecting cables
-    cout << dp[m] << endl;
+    cout << find_lis(bValues, max_b) << endl;
 
     return 0;
 }
