@@ -71,7 +71,8 @@ signed main() {
 
 	for(array<int,3>& r : rs) {
 		int a, b, c;
-		cin >> a >> b >> c;
+		cin >> a 
+		>> b >> c;
 		a--; b--;
 		r = {c, a, b}; // colocamos o custo no começo para podermos ordenar
 	}
