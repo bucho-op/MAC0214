@@ -23,3 +23,12 @@ Os exercícios resolvidos estarão distribuídos por conteúdo, dados os conteú
 
 Alguns temas foram expandidos para duas semanas, dado às horas dedicados e o número de exercícios resolvidos, além da interdisciplinaridade com outras disciplinas cursadas no mesmo semestre. Foram feitos em média 6 exercícios por tema, além das horas de estudo teórico sobre o assunto.
 
+## Realização de competições (contests)
+
+- Codeforces (02/10 | 1 resolvido | 3 horas);
+- Atcoder (26/10 | 3 resolvidos | 3 horas);
+- Codeforces (28/10 | 2 resolvidos | 3 horas);
+- Codeforces (01/11 | 3 resolvidos | 3 horas);
+- Codeforces (09/11 | 2 resolvidos | 3 horas);
+- Codeforces (5/12 | 4 resolvidos | 3 horas);
+
