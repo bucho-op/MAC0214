@@ -8,12 +8,12 @@ Os exercícios resolvidos estarão distribuídos por conteúdo, dados os conteú
 
 - Semana 1: Two Pointers (5 horas);
 - Semana 2: Programação dinâmica | parte 1 (7 horas);
-- Semana 3: Programação dinâmica | parte 2 (7 horas);
-- Semana 4: Algoritmo guloso | parte 1 (6 horas);
-- Semana 5: Algoritmo guloso | parte 2 (6 horas);
+- Semana 3: Programação dinâmica | parte 2 (6 horas);
+- Semana 4: Algoritmo guloso | parte 1 (5 horas);
+- Semana 5: Algoritmo guloso | parte 2 (5 horas);
 - Semana 6: BFS (5 horas);
 - Semana 7: Kruskal/DST (6 horas);
-- Semana 8: Kruskal/DST/Teoria dos Números (6 horas);
+- Semana 8: Kruskal/DST/Teoria dos Números (5 horas);
 - Semana 9: Teoria dos Números (4 horas);
 - Semana 10: Combinatória (5 horas);
 - Semana 11: Dijkstra (4 horas);
